@@ -13,12 +13,28 @@
   border-color: #363636 transparent transparent transparent;
   border-radius: 50%/100px 100px 0 0;
 }
+.OverVIewCurveContainer{
+  position: relative;
+  z-index: -20;
+  width: 100%;
+  height: 40vh;
+  background: #6BE6A8;
+  border: solid 5px #6BE6A8;
+  transform: rotateX(180deg);
+  border-color: #6BE6A8 transparent transparent transparent;
+  border-radius: 50%/100px 100px 0 0;
+}
 
 
 .my-swiper-container {
   box-shadow: none !important;
   width: 250px !important;
   height: 250px !important;
+}
+
+.overview_swiper{
+  width: 220px !important;
+  height: 275px !important;
 }
 
 .body_padding {
@@ -54,6 +70,10 @@
     width: 350px !important;
     height: 350px !important;
   }
+  .overview_swiper{
+    width: 330px !important;
+    height: 425px !important;
+  }
 
 }
 
@@ -71,5 +91,9 @@
     box-shadow: none !important;
     width: 350px !important;
     height: 350px !important;
+  }
+  .overview_swiper{
+    width: 330px !important;
+    height: 425px !important;
   }
 }

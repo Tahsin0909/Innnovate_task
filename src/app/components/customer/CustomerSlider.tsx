@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { EffectCards } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
