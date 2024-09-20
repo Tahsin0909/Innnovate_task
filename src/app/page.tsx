@@ -1,5 +1,6 @@
 import Banner from "./components/banner/Banner";
 import Customer from "./components/customer/Customer";
+import GridColor from "./components/gridColor/GridColor";
 import Navbar from "./components/navbar/Navbar";
 import Overview from "./components/overview/Overview";
 import Team from "./components/team/Team";
@@ -12,6 +13,7 @@ export default function Home() {
       <Team />
       <Customer/>
       <Overview/>
+      <GridColor/>
     </div>
   );
 }

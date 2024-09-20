@@ -35,9 +35,9 @@ const OverViewSlider = () => {
                 className="mySwiper"
             >
                 {colors.map((ColorData, index) => (
-                    <SwiperSlide key={index} className='overview_swiper flex items-center'>
+                    <SwiperSlide key={index} className='overview_swiper flex items-center rounded-lg'>
                         <div style={{ backgroundColor: ColorData.color }}
-                            className={`w-full border  transition-all duration-300 flex justify-center  items-center ${activeIndex === index ? 'h-full' : 'md:h-80 h-48'}`}
+                            className={`w-full rounded-lg transition-all duration-300 flex justify-center  items-center ${activeIndex === index ? 'h-full' : 'md:h-80 h-48'}`}
                         >
                             <span className='font-semibold'>Slide {index + 1}</span>
                         </div>
@@ -47,11 +47,11 @@ const OverViewSlider = () => {
 
             {/* Custom buttons using the swiper instance */}
             <div className='flex gap-4 items-center justify-end md:mt-0 mt-4'>
-                <button className={`${activeIndex > 0 ? "opacity-100" : "opacity-0"} border p-3 rounded-full bg-black`}
+                <button className={`${activeIndex > 0 ? "opacity-100" : "opacity-0"} p-3 rounded-full bg-black`}
                     onClick={() => swiperInstance?.slidePrev()}>
                     <ChevronLeft className='fill-transparent text-white relative ' />
                 </button>
-                <button className={`${activeIndex < colors.length -1  ? "opacity-100" : "opacity-0"} border p-3 rounded-full bg-black`}
+                <button className={`${activeIndex < colors.length -1  ? "opacity-100" : "opacity-0"} p-3 rounded-full bg-black`}
                     onClick={() => swiperInstance?.slideNext()}>
                     <ChevronRight className='fill-transparent text-white relative ' />
                 </button>
