@@ -34,7 +34,7 @@ const Navbar = () => {
 
 
     return (
-        <div className=" bg-[#363636] lg:px-20 md:px-10 px-8 py-4 text-white h-fit transition-all">
+        <header ref={ref} className=" bg-[#363636] lg:px-20 md:px-10 px-8 py-4 text-white h-fit transition-all">
             {/* Menu icon for mobile view, toggles the menu */}
             <Menu onClick={handleToggle} className="block md:hidden" />
 
@@ -44,27 +44,27 @@ const Navbar = () => {
                 {/* links section  */}
                 <div className="">
                     <ul className="flex flex-row  items-center gap-10">
-                        <li className="cursor-pointer lg:text-lg text-base font-semibold hover:text-green-600">
+                        <nav className="cursor-pointer lg:text-lg text-base font-semibold hover:text-green-600">
                             <span>Home</span>
-                        </li>
+                        </nav>
                         <li className="cursor-pointer lg:text-lg text-base flex items-center gap-1 group relative ">
                             <span className="font-semibold group-hover:text-green-600 ">Event</span>
                             <ChevronUp size={20} className="mt-1 group-hover:rotate-180 transition-all ease-linear group-hover:text-green-600" />
                             <ul className=" p-2 scale-0 group-hover:scale-100 absolute top-6  transform origin-top-left transition-transform ">
                                 <ul className="flex flex-col gap-2 p-4 w-36 rounded-md shadow-md text-black bg-white z-20">
-                                    <li className="cursor-pointer  text-base hover:font-semibold hover:text-green-600">Tech Meetups</li>
-                                    <li className="cursor-pointer  text-base hover:font-semibold hover:text-green-600">Summit 2024</li>
-                                    <li className="cursor-pointer  text-base hover:font-semibold hover:text-green-600">Seminar</li>
-                                    <li className="cursor-pointer  text-base hover:font-semibold hover:text-green-600">Workshop</li>
+                                    <nav className="cursor-pointer  text-base hover:font-semibold hover:text-green-600">Tech Meetups</nav>
+                                    <nav className="cursor-pointer  text-base hover:font-semibold hover:text-green-600">Summit 2024</nav>
+                                    <nav className="cursor-pointer  text-base hover:font-semibold hover:text-green-600">Seminar</nav>
+                                    <nav className="cursor-pointer  text-base hover:font-semibold hover:text-green-600">Workshop</nav>
                                 </ul>
                             </ul>
                         </li>
-                        <li className="cursor-pointer lg:text-lg text-base font-semibold hover:text-green-600">
+                        <nav className="cursor-pointer lg:text-lg text-base font-semibold hover:text-green-600">
                             <span>Contact</span>
-                        </li>
-                        <li className="cursor-pointer lg:text-lg text-base font-semibold hover:text-green-600">
+                        </nav>
+                        <nav className="cursor-pointer lg:text-lg text-base font-semibold hover:text-green-600">
                             <span>Blogs</span>
-                        </li>
+                        </nav>
                     </ul>
                 </div>
 
@@ -78,7 +78,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </header>
     );
 };
 

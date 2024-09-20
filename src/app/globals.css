@@ -2,4 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.curveContainer {
+  width: 100vw;
+  height: 40vh;
+  background: #363636;
+  border: solid 5px #363636;
+  transform: rotateX(180deg);
+  border-color: #363636 transparent transparent transparent;
+  border-radius: 50%/100px 100px 0 0;
+}
