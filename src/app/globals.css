@@ -5,11 +5,32 @@
 .curveContainer {
   position: relative;
   z-index: -20;
-  width: 100vw;
+  width: 100%;
   height: 40vh;
   background: #363636;
   border: solid 5px #363636;
   transform: rotateX(180deg);
   border-color: #363636 transparent transparent transparent;
   border-radius: 50%/100px 100px 0 0;
+}
+
+.body_padding {
+  padding-left: 2rem; /* px-8 */
+  padding-right: 2rem; /* px-8 */
+  padding-top: 1rem; /* py-4 */
+  padding-bottom: 1rem; /* py-4 */
+}
+
+@media (min-width: 768px) { /* md (medium screens and above) */
+  .body_padding {
+      padding-left: 2.5rem; /* px-10 */
+      padding-right: 2.5rem; /* px-10 */
+  }
+}
+
+@media (min-width: 1024px) { /* lg (large screens and above) */
+  .body_padding {
+      padding-left: 5rem; /* px-20 */
+      padding-right: 5rem; /* px-20 */
+  }
 }
