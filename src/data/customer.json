@@ -1,0 +1,45 @@
+[
+    {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "title": "Frontend Developer",
+      "subtitle": "React Expert",
+      "image": "https://i.ibb.co/KhKDm4y/portrait-young-handsome-man-jean-shirt-smiling-with-crossed-arms-176420-12083.jpg"
+    },
+    {
+      "name": "Alex Smith",
+      "email": "alex.smith@example.com",
+      "title": "Backend Developer",
+      "subtitle": "Node.js Specialist",
+      "image": "https://i.ibb.co/Jc4b96j/close-up-toothy-smiling-brunet-man-1187-5800.jpg"
+    },
+    {
+      "name": "Emily Davis",
+      "email": "emily.davis@example.com",
+      "title": "Full Stack Developer",
+      "subtitle": "MERN Enthusiast",
+      "image": "https://i.ibb.co/KhKDm4y/portrait-young-handsome-man-jean-shirt-smiling-with-crossed-arms-176420-12083.jpg"
+    },
+    {
+      "name": "Sarah Johnson",
+      "email": "sarah.johnson@example.com",
+      "title": "UX/UI Designer",
+      "subtitle": "Creative Innovator",
+      "image": "https://i.ibb.co/Jc4b96j/close-up-toothy-smiling-brunet-man-1187-5800.jpg"
+    },
+    {
+      "name": "Michael Lee",
+      "email": "michael.lee@example.com",
+      "title": "DevOps Engineer",
+      "subtitle": "Cloud Specialist",
+      "image": "https://i.ibb.co/KhKDm4y/portrait-young-handsome-man-jean-shirt-smiling-with-crossed-arms-176420-12083.jpg"
+    },
+    {
+      "name": "Sophia Brown",
+      "email": "sophia.brown@example.com",
+      "title": "Data Scientist",
+      "subtitle": "AI Enthusiast",
+      "image": "https://i.ibb.co/Jc4b96j/close-up-toothy-smiling-brunet-man-1187-5800.jpg"
+    }
+  ]
+  
