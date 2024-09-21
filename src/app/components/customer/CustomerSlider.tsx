@@ -87,22 +87,22 @@ const CustomerSlider = () => {
                             {/* Slide content styled based on individual bgColor */}
                             <div style={{ backgroundColor: data.bgColor }} className={`md:w-[350px] md:h-[350px] w-[250px] h-[250px] rounded-lg md:p-4 p-3 flex flex-col`}>
                                 {/* Subtitle of the customer (e.g., React Expert) */}
-                                <h2 className="text-2xl text-white font-semibold">{data.subtitle}</h2>
+                                <h2 className="md:text-2xl text-lg text-white font-semibold">{data.subtitle}</h2>
 
                                 {/* Image and name section */}
                                 <div className="flex-1">
-                                    <div className="flex items-center gap-2 md:mt-4">
+                                    <div className="flex items-center gap-2 md:mt-4 mt-4">
                                         {/* Customer profile picture */}
-                                        <img src={data.image} alt={data.name} className="w-10 h-10 rounded-full object-cover" />
+                                        <img src={data.image} alt={data.name} className="md:w-10 w-8 md:h-10 h-8 rounded-full object-cover" />
                                         {/* Customer name */}
-                                        <h3 className="text-xl text-white">{data.name}</h3>
+                                        <h3 className="md:text-xl text-white">{data.name}</h3>
                                     </div>
                                 </div>
 
                                 {/* Contact info section with email and title */}
                                 <div className="p-2 rounded-xl glassEffect">
-                                    <p className="text-white">{data.email}</p>
-                                    <p className="text-white">{data.title}</p>
+                                    <p className="text-white md:text-base text-sm">{data.email}</p>
+                                    <p className="text-white md:text-base text-sm">{data.title}</p>
                                 </div>
                             </div>
                         </SwiperSlide>
