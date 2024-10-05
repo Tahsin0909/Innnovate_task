@@ -5,14 +5,18 @@ import React, { useEffect, useState } from 'react';
 import Event from './Event';
 import { TechEvent } from '@/app/types/Types';
 
-const CompanyEvent = () => {
+interface filterProps{
+    filter?: string;
+}
+
+const CompanyEvent = ({filter = "All Category"}: filterProps) => {
 
     // State to store all tech events
     const [techEvents, setTechEvents] = useState<TechEvent[]>([]);
     // State to store filtered events based on the active category
     const [filteredEvents, setFilteredEvents] = useState<TechEvent[]>([]);
     // State to keep track of the active category for filtering
-    const [activeCategory, setActiveCategory] = useState<string>('All Category');
+    const [activeCategory, setActiveCategory] = useState<string>(filter);
 
     useEffect(() => {
         // Function to fetch event data (you can replace this with an API call if necessary)

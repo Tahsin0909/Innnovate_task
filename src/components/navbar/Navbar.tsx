@@ -1,9 +1,16 @@
 'use client';
 
 import { ChevronUp, Menu, Search } from "lucide-react";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import Button from "../shared/button/Button";
+import { useRouter } from "next/navigation";
+
 
 const Navbar = () => {
+
+
+    const EventRouter = useRouter()
 
     // State to toggle the visibility of the menu
     const [toggle, setToggle] = useState<boolean>(false);
@@ -56,27 +63,32 @@ const Navbar = () => {
                 {/* links section  */}
                 <div className={`${toggle ? 'scale-100' : 'scale-0 md:scale-100'} md:relative absolute top-1 left-1 transform origin-top-left delay-150 transition-transform`}>
                     <ul className={`flex flex-row items-center gap-10 `}>
-                        <nav className="cursor-pointer lg:text-lg text-base font-semibold hover:text-hover_Color">
+                        <Link href={'/'} className="cursor-pointer lg:text-lg text-base font-semibold hover:text-hover_Color">
                             <span>Home</span>
-                        </nav>
+                        </Link>
                         <li className="cursor-pointer lg:text-lg text-base flex items-center gap-1 group relative ">
-                            <span className="font-semibold group-hover:text-hover_Color ">Event</span>
+                            <span onClick={() => EventRouter.push('/events')} className="font-semibold group-hover:text-hover_Color ">Event</span>
                             <ChevronUp size={20} className="mt-1 group-hover:rotate-180 transition-all ease-linear group-hover:text-hover_Color" />
                             <ul className=" p-2 scale-0 group-hover:scale-100 absolute top-6  transform origin-top-left  transition-transform z-50">
                                 <ul className="flex flex-col gap-2 p-4 w-36 rounded-md shadow-md text-black bg-white z-50">
-                                    <nav className="cursor-pointer  text-base hover:font-semibold hover:text-hover_Color">Tech Meetups</nav>
-                                    <nav className="cursor-pointer  text-base hover:font-semibold hover:text-hover_Color">Summit 2024</nav>
-                                    <nav className="cursor-pointer  text-base hover:font-semibold hover:text-hover_Color">Seminar</nav>
-                                    <nav className="cursor-pointer  text-base hover:font-semibold hover:text-hover_Color">Workshop</nav>
+                                    <Link href={"/events/meetups"} className="cursor-pointer  text-base hover:font-semibold hover:text-hover_Color">Tech Meetups</Link>
+                                    <Link href={"/events/summit"} className="cursor-pointer  text-base hover:font-semibold hover:text-hover_Color">Summit 2024</Link>
+                                    <Link href={"/events/seminar"} className="cursor-pointer  text-base hover:font-semibold hover:text-hover_Color">Seminar</Link>
+                                    <Link href={"/events/workShop"} className="cursor-pointer  text-base hover:font-semibold hover:text-hover_Color">Workshop</Link>
                                 </ul>
                             </ul>
                         </li>
-                        <nav className="cursor-pointer lg:text-lg text-base font-semibold hover:text-hover_Color">
+                        <Link href={'/contacts'} className="cursor-pointer lg:text-lg text-base font-semibold hover:text-hover_Color">
                             <span>Contact</span>
-                        </nav>
-                        <nav className="cursor-pointer lg:text-lg text-base font-semibold hover:text-hover_Color">
+                        </Link>
+                        <Link href={'/blogs'} className="cursor-pointer lg:text-lg text-base font-semibold hover:text-hover_Color">
                             <span>Blogs</span>
-                        </nav>
+                        </Link>
+                        <Link href={'/products'} className="cursor-pointer lg:text-lg text-base font-semibold hover:text-hover_Color">
+                            <span>Products</span>
+                        </Link>
+
+                        <Button navigate="/blogs" text="Navigate" />
                     </ul>
                 </div>
 
