@@ -1,12 +1,13 @@
 import { NextRequest, NextResponse } from "next/server";
 
 const middleware = (request: NextRequest) => {
-    return NextResponse.redirect(new URL('/home', request.url))
+    console.log(request.url);
+    return NextResponse.redirect(new URL('/', request.url))
 };
 
 // See "Matching Paths" below to learn more
 export const config = {
-    matcher: '/about/:path*',
+    matcher: ['/blogs', '/about']
 }
 
 export default middleware;
