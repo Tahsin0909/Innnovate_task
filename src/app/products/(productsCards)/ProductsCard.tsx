@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 
+import { montserrat, poppines } from "@/fonts/fonts";
 import Link from "next/link";
 
 
@@ -17,8 +18,8 @@ const ProductCard = ({ product }) => {
                 />
             </div>
             <div className="p-4">
-                <h2 className="text-xl font-semibold text-gray-800">{product.title}</h2>
-                <p className="text-sm text-gray-600 mt-1">{product.description}</p>
+                <h2 className={`text-xl font-semibold text-gray-800 ${montserrat.className} `}>{product.title}</h2>
+                <p className={`text-sm text-gray-600 mt-1 ${poppines.className}`}>{product.description}</p>
 
                 <div className="flex items-center justify-between mt-4">
                     <span className="text-lg font-bold text-green-600">${product.price}</span>

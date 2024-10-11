@@ -1,6 +1,23 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
 
+
+
+export const generateMetadata = async ({ params }) => {
+    const Id = await params.productsDetails
+    const data = await fetch(`https://dummyjson.com/products/${Id}`)
+    const product = await data.json()
+
+
+    return {
+
+        title: `${product?.title}`,
+        description: `${product?.description}`
+
+
+    }
+}
+
 const ProductsDetailsPage = async ({ params }) => {
     const Id = params.productsDetails
     const data = await fetch(`https://dummyjson.com/products/${Id}`)

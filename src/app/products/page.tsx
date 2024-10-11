@@ -1,4 +1,12 @@
+import { Metadata } from "next";
 import ProductCard from "./(productsCards)/ProductsCard";
+
+export const metadata: Metadata = {
+    title: {
+        absolute:"Products Page"
+    },
+    description: "Products  page",
+  };
 
 const ProductsPage = async () => {
 
