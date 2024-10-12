@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const ProductsPage = async () => {
 
-    const data = await fetch('https://dummyjson.com/products')
+    const data = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/products`)
     const posts = await data.json()
     return (
         <div className="body_padding">
