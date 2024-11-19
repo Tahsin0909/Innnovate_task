@@ -14,3 +14,12 @@ export interface Event {
     colorPrimary: string;
     colorSecondary: string;
 }
+
+export interface newEvent {
+    event: string;
+    joiningPrice: number;
+    joined: number;
+    category: string;
+    colorPrimary: string;
+    colorSecondary: string;
+}
